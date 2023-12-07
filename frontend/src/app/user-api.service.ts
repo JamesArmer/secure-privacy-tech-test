@@ -9,13 +9,11 @@ import { environment } from '../environments/environment';
 export class UserApiService {
   constructor() {
     axios.defaults.baseURL = environment.BASE_URL;
-    axios.defaults.headers.post['Content-Type'] = 'application/json';
-    axios.defaults.headers.post['Accept'] = 'application/json';
   }
 
   async getUsers() {
     try {
-      const response = await axios.get('/users/');
+      const response = await axios.get('/api/users');
       return response.data;
     } catch (error) {
       console.error(error);
@@ -25,7 +23,7 @@ export class UserApiService {
   async createNewUser(user: User) {
     try {
       console.log(user);
-      await axios.post('/users/create', user);
+      await axios.post('/api/users', user);
     } catch (error) {
       console.error(error);
     }
