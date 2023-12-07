@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { TextInputComponent } from './text-input/text-input.component';
+import { CreateUserFormComponent } from './create-user-form/create-user-form.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
-  imports: [CommonModule, RouterOutlet, TextInputComponent],
+  imports: [CommonModule, RouterOutlet, CreateUserFormComponent],
 })
-export class AppComponent {
-  title = 'secure-privacy-frontend';
-}
+export class AppComponent {}

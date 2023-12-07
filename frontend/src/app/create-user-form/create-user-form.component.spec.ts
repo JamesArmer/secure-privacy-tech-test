@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextInputComponent } from './text-input.component';
+import { CreateUserFormComponent } from './create-user-form.component';
 
-describe('TextInputComponent', () => {
-  let component: TextInputComponent;
-  let fixture: ComponentFixture<TextInputComponent>;
+describe('CreateUserFormComponent', () => {
+  let component: CreateUserFormComponent;
+  let fixture: ComponentFixture<CreateUserFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TextInputComponent]
+      imports: [CreateUserFormComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TextInputComponent);
+    fixture = TestBed.createComponent(CreateUserFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,71 @@
+<div class="flex justify-center">
+  <h1 class="text-3xl text-bold">Create new user</h1>
+  <form (ngSubmit)="onSubmit()" [formGroup]="userForm">
+    <div id="nameInput" class="py-8">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        formControlName="nameControl"
+        id="name"
+        required
+        class="border rounded"
+      />
+      <div
+        [hidden]="
+          userForm.controls['nameControl'].valid ||
+          userForm.controls['nameControl'].pristine
+        "
+        class="text-red-500"
+      >
+        Name is required
+      </div>
+    </div>
+
+    <div id="emailInput" class="py-8">
+      <label for="name">Email:</label>
+      <input
+        type="text"
+        formControlName="emailControl"
+        id="email"
+        required
+        class="border rounded"
+      />
+      <div
+        [hidden]="
+          userForm.controls['emailControl'].valid ||
+          userForm.controls['emailControl'].pristine
+        "
+        class="text-red-500"
+      >
+        Email is required
+      </div>
+    </div>
+
+    <div id="phoneNumberInput" class="py-8">
+      <label for="name">Phone number:</label>
+      <input
+        type="text"
+        formControlName="phoneNumberControl"
+        id="phoneNumber"
+        required
+        class="border rounded"
+      />
+      <div
+        [hidden]="
+          userForm.controls['phoneNumberControl'].valid ||
+          userForm.controls['phoneNumberControl'].pristine
+        "
+        class="text-red-500"
+      >
+        Phone number is required
+      </div>
+    </div>
+    <button
+      type="submit"
+      class="bg-blue-500 rounded p-2"
+      [disabled]="!userForm.valid"
+    >
+      Submit
+    </button>
+  </form>
+</div>
