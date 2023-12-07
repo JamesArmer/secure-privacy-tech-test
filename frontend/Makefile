@@ -2,4 +2,4 @@ init:
 	npm install
 
 run:
-	ng serve
+	ng serve --verbose

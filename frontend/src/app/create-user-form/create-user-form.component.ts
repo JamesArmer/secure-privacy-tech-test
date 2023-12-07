@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  NonNullableFormBuilder,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
+import { UserApiService } from '../user-api.service';
+import { User } from '../models/user';
 
 @Component({
   selector: 'app-create-user-form',
@@ -8,13 +16,21 @@ import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
   imports: [ReactiveFormsModule],
 })
 export class CreateUserFormComponent {
-  userForm = this.formBuilder.group({
-    nameControl: ['', Validators.required],
-    emailControl: ['', Validators.required],
-    phoneNumberControl: ['', Validators.required],
-  });
+  userForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private readonly formBuilder: NonNullableFormBuilder,
+    private readonly userApiService: UserApiService
+  ) {
+    this.userForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      email: ['', Validators.required],
+      phoneNumber: ['', [Validators.required, Validators.minLength(10)]],
+    });
+  }
 
-  onSubmit() {}
+  onSubmit() {
+    const user = new User(this.userForm.value);
+    this.userApiService.createNewUser(user);
+  }
 }

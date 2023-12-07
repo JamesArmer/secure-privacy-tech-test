@@ -5,15 +5,14 @@
       <label for="name">Name:</label>
       <input
         type="text"
-        formControlName="nameControl"
+        formControlName="name"
         id="name"
         required
         class="border rounded"
       />
       <div
         [hidden]="
-          userForm.controls['nameControl'].valid ||
-          userForm.controls['nameControl'].pristine
+          userForm.controls['name'].valid || userForm.controls['name'].pristine
         "
         class="text-red-500"
       >
@@ -25,15 +24,15 @@
       <label for="name">Email:</label>
       <input
         type="text"
-        formControlName="emailControl"
+        formControlName="email"
         id="email"
         required
         class="border rounded"
       />
       <div
         [hidden]="
-          userForm.controls['emailControl'].valid ||
-          userForm.controls['emailControl'].pristine
+          userForm.controls['email'].valid ||
+          userForm.controls['email'].pristine
         "
         class="text-red-500"
       >
@@ -45,15 +44,15 @@
       <label for="name">Phone number:</label>
       <input
         type="text"
-        formControlName="phoneNumberControl"
+        formControlName="phoneNumber"
         id="phoneNumber"
         required
         class="border rounded"
       />
       <div
         [hidden]="
-          userForm.controls['phoneNumberControl'].valid ||
-          userForm.controls['phoneNumberControl'].pristine
+          userForm.controls['phoneNumber'].valid ||
+          userForm.controls['phoneNumber'].pristine
         "
         class="text-red-500"
       >
@@ -62,7 +61,7 @@
     </div>
     <button
       type="submit"
-      class="bg-blue-500 rounded p-2"
+      class="bg-blue-500 text-white rounded p-2"
       [disabled]="!userForm.valid"
     >
       Submit
