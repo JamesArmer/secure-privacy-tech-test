@@ -26,16 +26,16 @@ public class UserRepository
         await _usersCollection.Find(_ => true).ToListAsync();
 
     public async Task<User?> GetAsync(string id) =>
-        await _usersCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+        await _usersCollection.Find(x => x._id == id).FirstOrDefaultAsync();
 
     public async Task CreateAsync(User newUser) =>
         await _usersCollection.InsertOneAsync(newUser);
         
 
     public async Task UpdateAsync(string id, User updatedBook) =>
-        await _usersCollection.ReplaceOneAsync(x => x.Id == id, updatedBook);
+        await _usersCollection.ReplaceOneAsync(x => x._id == id, updatedBook);
 
     public async Task RemoveAsync(string id) =>
-        await _usersCollection.DeleteOneAsync(x => x.Id == id);
+        await _usersCollection.DeleteOneAsync(x => x._id == id);
 }
 

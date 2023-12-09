@@ -1,70 +1,77 @@
-<div class="flex justify-center">
-  <h1 class="text-3xl text-bold">Create new user</h1>
-  <form (ngSubmit)="onSubmit()" [formGroup]="userForm">
-    <div id="nameInput" class="py-8">
-      <label for="name">Name:</label>
-      <input
-        type="text"
-        formControlName="name"
-        id="name"
-        required
-        class="border rounded"
-      />
-      <div
-        [hidden]="
-          userForm.controls['name'].valid || userForm.controls['name'].pristine
-        "
-        class="text-red-500"
-      >
-        Name is required
+<div class="flex flex-col justify-center items-center pt-10">
+  <div class="flex">
+    <h1 class="text-3xl text-bold">Create new user</h1>
+  </div>
+  <div class="flex py-6">
+    <form (ngSubmit)="onSubmit()" [formGroup]="userForm">
+      <div id="nameInput" class="py-4">
+        <label for="name">Name</label><br />
+        <input
+          type="text"
+          formControlName="name"
+          id="name"
+          required
+          class="border rounded"
+        />
+        <div
+          [hidden]="
+            userForm.controls['name'].valid ||
+            userForm.controls['name'].pristine
+          "
+          class="text-red-500"
+        >
+          Name is required
+        </div>
       </div>
-    </div>
 
-    <div id="emailInput" class="py-8">
-      <label for="name">Email:</label>
-      <input
-        type="text"
-        formControlName="email"
-        id="email"
-        required
-        class="border rounded"
-      />
-      <div
-        [hidden]="
-          userForm.controls['email'].valid ||
-          userForm.controls['email'].pristine
-        "
-        class="text-red-500"
-      >
-        Email is required
+      <div id="emailInput" class="py-4">
+        <label for="name">Email</label><br />
+        <input
+          type="text"
+          formControlName="email"
+          id="email"
+          required
+          class="border rounded"
+        />
+        <div
+          [hidden]="
+            userForm.controls['email'].valid ||
+            userForm.controls['email'].pristine
+          "
+          class="text-red-500"
+        >
+          Email is required
+        </div>
       </div>
-    </div>
 
-    <div id="phoneNumberInput" class="py-8">
-      <label for="name">Phone number:</label>
-      <input
-        type="text"
-        formControlName="phoneNumber"
-        id="phoneNumber"
-        required
-        class="border rounded"
-      />
-      <div
-        [hidden]="
-          userForm.controls['phoneNumber'].valid ||
-          userForm.controls['phoneNumber'].pristine
-        "
-        class="text-red-500"
-      >
-        Phone number is required
+      <div id="phoneNumberInput" class="py-4">
+        <label for="name">Phone number</label><br />
+        <input
+          type="text"
+          formControlName="phoneNumber"
+          id="phoneNumber"
+          required
+          class="border rounded"
+        />
+        <div
+          [hidden]="
+            userForm.controls['phoneNumber'].valid ||
+            userForm.controls['phoneNumber'].pristine
+          "
+          class="text-red-500"
+        >
+          Phone number is required
+        </div>
       </div>
-    </div>
-    <button
-      type="submit"
-      class="bg-blue-500 text-white rounded p-2"
-      [disabled]="!userForm.valid"
-    >
-      Submit
-    </button>
-  </form>
+      <div class="flex justify-center">
+        <button
+          type="submit"
+          class="bg-blue-500 text-white rounded p-2"
+          [disabled]="!userForm.valid"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
 </div>

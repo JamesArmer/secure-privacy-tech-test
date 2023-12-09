@@ -1,0 +1,33 @@
+<div class="flex flex-col justify-center items-center pt-10">
+  <div class="flex py-8">
+    <h2 class="text-3xl text-bold">Users</h2>
+  </div>
+  <div class="flex py-8">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users()" class="py-2">
+          <td class="px-2">{{ user.name }}</td>
+          <td class="px-2">{{ user.email }}</td>
+          <td class="px-2">{{ user.phoneNumber }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="flex py-8">
+    <a
+      routerLink="/create-new-user"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      class="bg-blue-500 text-white rounded p-2"
+    >
+      Create new user
+    </a>
+  </div>
+</div>
