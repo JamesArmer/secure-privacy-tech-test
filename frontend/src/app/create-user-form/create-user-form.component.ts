@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {
   FormGroup,
   NonNullableFormBuilder,
@@ -14,6 +14,7 @@ import { Router, RouterModule } from '@angular/router';
   standalone: true,
   templateUrl: './create-user-form.component.html',
   imports: [ReactiveFormsModule, RouterModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CreateUserFormComponent {
   userForm: FormGroup;

@@ -1,4 +1,5 @@
-﻿using backend.Repository;
+﻿using backend.Encryption;
+using backend.Repository;
 using backend.Services;
 
 var AllowLocalhostOrigins = "_AllowLocalhostOrigins";
@@ -20,8 +21,13 @@ builder.Services.AddCors(options =>
                       });
 });
 
-builder.Services.AddSingleton<UserService>();
 builder.Services.AddSingleton<UserRepository>();
+builder.Services.AddSingleton<UserService>();
+builder.Services.AddSingleton<KmsHelper>();
+builder.Services.AddSingleton<EncryptionService>();
+
+builder.Services.AddSingleton<BinaryStringService>();
+
 
 builder.Services.AddControllers()
     .AddJsonOptions(

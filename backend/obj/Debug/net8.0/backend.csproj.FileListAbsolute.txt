@@ -13,6 +13,8 @@
 /Users/jamesarmer/Documents/GitHub/secure-privacy-tech-test/backend/bin/Debug/net8.0/MongoDB.Driver.dll
 /Users/jamesarmer/Documents/GitHub/secure-privacy-tech-test/backend/bin/Debug/net8.0/MongoDB.Driver.Core.dll
 /Users/jamesarmer/Documents/GitHub/secure-privacy-tech-test/backend/bin/Debug/net8.0/MongoDB.Libmongocrypt.dll
+/Users/jamesarmer/Documents/GitHub/secure-privacy-tech-test/backend/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/jamesarmer/Documents/GitHub/secure-privacy-tech-test/backend/bin/Debug/net8.0/NuGet.Frameworks.dll
 /Users/jamesarmer/Documents/GitHub/secure-privacy-tech-test/backend/bin/Debug/net8.0/SharpCompress.dll
 /Users/jamesarmer/Documents/GitHub/secure-privacy-tech-test/backend/bin/Debug/net8.0/Snappier.dll
 /Users/jamesarmer/Documents/GitHub/secure-privacy-tech-test/backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll

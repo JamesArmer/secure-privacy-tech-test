@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rfLn1PYWiRwOv1r3DAa3RvQQBKMU4JHJAvB6A1wJHMen5kRg/EHlx91QlLME+XisOTvrmpQfQaaPwaLvJ3d49g==",
+  "dgSpecHash": "g19WwUTUQ6aZ0KECVqcBtM0doM4xJ26mqoccZIVBMQtecZQKg9vSuCqjOMqJzF1sEZXLAjfFMcTeyojLbJckig==",
   "success": true,
   "projectFilePath": "/Users/jamesarmer/Documents/GitHub/secure-privacy-tech-test/backend/backend.csproj",
   "expectedPackageFiles": [
@@ -11,11 +11,14 @@
     "/Users/jamesarmer/.nuget/packages/microsoft.extensions.logging.abstractions/2.0.0/microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "/Users/jamesarmer/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "/Users/jamesarmer/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/jamesarmer/.nuget/packages/microsoft.testplatform/17.8.0/microsoft.testplatform.17.8.0.nupkg.sha512",
     "/Users/jamesarmer/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/Users/jamesarmer/.nuget/packages/mongodb.bson/2.22.0/mongodb.bson.2.22.0.nupkg.sha512",
     "/Users/jamesarmer/.nuget/packages/mongodb.driver/2.22.0/mongodb.driver.2.22.0.nupkg.sha512",
     "/Users/jamesarmer/.nuget/packages/mongodb.driver.core/2.22.0/mongodb.driver.core.2.22.0.nupkg.sha512",
     "/Users/jamesarmer/.nuget/packages/mongodb.libmongocrypt/1.8.0/mongodb.libmongocrypt.1.8.0.nupkg.sha512",
+    "/Users/jamesarmer/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/jamesarmer/.nuget/packages/nuget.frameworks/6.8.0/nuget.frameworks.6.8.0.nupkg.sha512",
     "/Users/jamesarmer/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
     "/Users/jamesarmer/.nuget/packages/snappier/1.0.0/snappier.1.0.0.nupkg.sha512",
     "/Users/jamesarmer/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",

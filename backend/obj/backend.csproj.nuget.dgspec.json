@@ -38,6 +38,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.TestPlatform": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.22.0, )"
@@ -49,6 +53,14 @@
             "MongoDB.Driver.Core": {
               "target": "Package",
               "version": "[2.22.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "NuGet.Frameworks": {
+              "target": "Package",
+              "version": "[6.8.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
