@@ -63,6 +63,26 @@
           Phone number is required
         </div>
       </div>
+      <div class="py-4">
+        <label for="myCheckbox"
+          >I have read and understood the
+          <a
+            routerLink="/privacy-policy"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            target="about:blank"
+            class="underline"
+            >Privacy Policy</a
+          >*</label
+        >
+        <input
+          type="checkbox"
+          formControlName="privacyPolicyChecked"
+          required
+          id="privacyPolicyCheckbox"
+          name="privacy-policy"
+        />
+      </div>
       <div class="flex justify-center">
         <button
           type="submit"

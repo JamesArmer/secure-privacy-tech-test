@@ -16,6 +16,7 @@ public class UserService
         _encryptionService = encryptionService;
     }
 
+    //TODO: shift encryption logic to field attributes in the model file
     public async Task<List<User>> GetAllUsers()
     {
         var users = await _userRepository.GetAsync();

@@ -28,6 +28,7 @@ export class CreateUserFormComponent {
       name: ['', Validators.required],
       email: ['', Validators.required],
       phoneNumber: ['', [Validators.required, Validators.minLength(10)]],
+      privacyPolicyChecked: [false, Validators.required],
     });
   }
 

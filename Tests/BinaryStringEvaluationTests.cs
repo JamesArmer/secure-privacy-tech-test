@@ -14,11 +14,11 @@ public class BinaryStringEvaluationTests
     }
 
     [Fact]
-    public void IsBinaryValid_InputIs001_ReturnFalse()
+    public void IsBinaryValid_InputIs0011_ReturnFalse()
     {
         var binaryStringService = new BinaryStringService();
-        bool result = binaryStringService.Evaluate("001");
+        bool result = binaryStringService.Evaluate("0011");
 
-        Assert.False(result, "001 is invalid");
+        Assert.False(result, "0011 is invalid");
     }
 }

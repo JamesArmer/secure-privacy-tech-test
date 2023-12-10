@@ -1,3 +1,6 @@
+run:
+	dotnet run
+
 up:
 	docker compose up -d
 
