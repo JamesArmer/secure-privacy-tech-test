@@ -18,7 +18,7 @@ To run MongoDB locally use the `make up` command in the `/backend` folder which 
 
 ## Angular 17 Frontend
 
-The Angular fronted uses routing between pages which are all standalone components:
+The Angular frontend uses routing between pages which are all standalone components:
 
 - user-list (/)
 - create-user-form (/create-user-form)
@@ -38,7 +38,7 @@ The `ReactiveFormsModule` is used for `FormBuilder` to construct the form and ha
 
 Conditional logic is used within the template to show red error text when a form input is invalid / not pristine.
 
-A checkbox is used to ensure the user has access to the website's privacy policy for GDPR compliance.
+A checkbox is used to ensure the user has access to and accepts the website's privacy policy for GDPR compliance.
 
 The `userApiService` is used to submit the form data to the backend for persistence.
 
@@ -48,7 +48,7 @@ A page containing the privacy policy.
 
 ### userApiService
 
-This Angular service uses `axios` to handle network requests with async/await for non-blocking function execution.
+This Angular service uses `axios` to handle network requests with `async`/`await` for non-blocking function execution.
 
 The base URL for the backend server is stored in the environment directory and set as a default value with axios.
 
@@ -58,7 +58,7 @@ The .NET backend uses a 3-tier controller/service/repository design with classes
 
 ## User functionality
 
-Async/await is again used for non-blocking function execution with functions returning `Task` types.
+`async`/`await` is again used for non-blocking function execution with functions returning `Task` types.
 
 Basic CRUD operations are handled in the `UserService` which also uses the `EncryptionService` for client-side field-level encryption which ensures pseudonymisation by default on select sensitive fields. This prevents user data from being seen in plaintext unless it is deliberatley decrypted, which follows good data protection principles of data minimisation.
 
@@ -68,4 +68,4 @@ The code for this follows the same controller and service pattern, with the bina
 
 ### Unit Tests
 
-The xUnit tests are held within a separate project at the root level of the repository in the `Tests` folder.
+The xUnit tests for the binary string evaluator are held within a separate project at the root level of the repository in the `Tests` folder.
