@@ -56,16 +56,16 @@ The base URL for the backend server is stored in the environment directory and s
 
 The .NET backend uses a 3-tier controller/service/repository design with classes stored in the models folder.
 
-## User functionality
+### User functionality
 
 `async`/`await` is again used for non-blocking function execution with functions returning `Task` types.
 
 Basic CRUD operations are handled in the `UserService` which also uses the `EncryptionService` for client-side field-level encryption which ensures pseudonymisation by default on select sensitive fields. This prevents user data from being seen in plaintext unless it is deliberatley decrypted, which follows good data protection principles of data minimisation.
 
-## Binary String Evaluator
+### Binary String Evaluator
 
 The code for this follows the same controller and service pattern, with the binary string being passed as a route value.
 
-### Unit Tests
+#### Unit Tests
 
 The xUnit tests for the binary string evaluator are held within a separate project at the root level of the repository in the `Tests` folder.
