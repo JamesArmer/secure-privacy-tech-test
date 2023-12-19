@@ -5,7 +5,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { UserApiService } from '../user-api.service';
+import { UserApiService } from '../services/user-api.service';
 import { User } from '../models/user';
 import { Router, RouterModule } from '@angular/router';
 

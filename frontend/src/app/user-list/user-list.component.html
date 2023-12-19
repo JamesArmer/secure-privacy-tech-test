@@ -30,4 +30,25 @@
       Create new user
     </a>
   </div>
+  <div>
+    <div class="py-2">
+      {{ message$ | async }}
+    </div>
+    <div class="py-2">
+      <button
+        class="bg-blue-500 text-white rounded p-2"
+        (click)="spanishMessage()"
+      >
+        Spanish
+      </button>
+    </div>
+    <div class="py-2">
+      <button
+        class="bg-blue-500 text-white rounded p-2"
+        (click)="frenchMessage()"
+      >
+        French
+      </button>
+    </div>
+  </div>
 </div>
